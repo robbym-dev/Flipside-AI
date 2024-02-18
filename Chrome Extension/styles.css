@@ -1,0 +1,115 @@
+html, body {
+    background-color: #f3efe5;
+    color: #252422;
+    font-weight: 300;
+    font-family: 'Open-sans', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.content {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.header {
+    background-color: #252422;
+    color: #fffcf2;
+    font-weight: 300;
+    font-family: 'Open-sans', sans-serif;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+}
+
+.header img {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.header h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #fffcf2;
+    margin-left: 10px;
+}
+
+
+.feed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #fffcf2;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.feed img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.feed p {
+    font-size: 1.2em;
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+    font-weight: 300;
+    margin: 10px
+}
+
+.feed a {
+    text-decoration: none;
+    color: #252422;
+    font-weight: 600;
+    font-size: 1.2em;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fffcf2;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.feed a:hover {
+    background-color: #252422;
+    color: #fffcf2;
+}
+
+.footer {
+    background-color: #eb5e28;
+    color: #252422;
+    font-weight: 600;
+    font-family: 'Open-sans', sans-serif;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    position: fixed;
+    width: 80%;
+    bottom: 10px;
+    left: 7%;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 15px;
+    
+}

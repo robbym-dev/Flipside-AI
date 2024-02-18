@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>Popup</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="popup.js"></script>
+        <script type="module">
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+            import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-analytics.js";
+            import { getFirestore, collection, getDocs } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
+            console.log('trying to get fireabse')
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+          
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            const firebaseConfig = {
+              apiKey: "AIzaSyAxOAi5tuql8hr_ATj8cjgBsOIEJy4U-Rs",
+              authDomain: "flipside-ad08b.firebaseapp.com",
+              projectId: "flipside-ad08b",
+              storageBucket: "flipside-ad08b.appspot.com",
+              messagingSenderId: "681885305952",
+              appId: "1:681885305952:web:afaf870ed8342f440f4705",
+              measurementId: "G-RC2MT9DZW9"
+            };
+          
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+
+            const db = getFirestore(app);
+            const querySnapshot = await getDocs(collection(db, "newsArticles"));
+            querySnapshot.forEach((doc) => {
+                console.log(`${doc.id} => ${doc.data()}`);
+            });
+          </script>
+    </head>
+    <body style="height: 600px; width: 325px;">
+        <div class="header">
+            <img src="120.png" alt="Google Logo" />
+            <h1>Flipside Companion</h1>
+        </div>
+        <div class="content">
+            <div class="feed">
+                <h1>Apple Vision Pro: A Comprehensive Review</h1>
+                <img src="pic.png" alt="Google Logo" />
+                <p> 
+                    In this comprehensive review, Anshel Sag examines the Apple Vision Pro headset through a detailed lens, covering various aspects including the initial buying experience, hardware specifications, setup process, user interfaces, app ecosystem, target market, and future expectations. Sag provides critical insights into the device's design decisions, highlighting its strengths such as the intuitive eye tracking and pinch gesture interface, while also addressing concerns like the lack of USB ports and the hefty price tag. With a focus on both the device's capabilities and its potential impact on the extended reality (XR) market, this review offers a balanced perspective on the Vision Pro's position in the evolving landscape of immersive technology.</p>
+            </div>
+            <div class="feed">
+                <h1>Narrative 1/2</h1>
+                <p> 
+                    <b>Innovative Advancements: The Vision Pro's Transformative Potential in XR</b><br>
+                    The positive perspective on the Apple Vision Pro (AVP) emphasizes its groundbreaking technology and transformative potential in the extended reality (XR) market. It acknowledges Apple's efforts in creating a premium, high-quality device that pushes the boundaries of spatial computing. This perspective appreciates the AVP's advanced features such as eye tracking and foveated rendering, which contribute to an immersive user experience and pave the way for future developments in AR and VR technologies. Additionally, it sees the AVP as a catalyst for innovation and competition in the XR industry, driving investment and encouraging developers to explore new possibilities in spatial computing applications. Overall, this perspective is optimistic about the AVP's role in shaping the future of immersive technology and its potential to inspire further advancements in the field.</p>
+            </div>
+            <div class="feed">
+                <h1>Narrative 2/2</h1>
+                <p> 
+                    <b>Assessing Limitations and Challenges of the Vision Pro</b><br>
+                    On the other hand, the critical perspective offers a more skeptical view of the Apple Vision Pro (AVP), highlighting its shortcomings and questioning its suitability for a broader consumer audience. This perspective raises concerns about the device's high price point, heavy weight, and ergonomic issues, suggesting that these factors could limit its appeal and accessibility. It also critiques certain design decisions, such as the absence of USB ports for data connectivity, and expresses disappointment with the perceived lack of innovation in the AVP's app ecosystem and user experience. Additionally, this perspective is cautious about the device's mass-market potential, citing challenges related to app discoverability and the overall value proposition compared to other VR and AR alternatives. Despite acknowledging the AVP's technological advancements, this perspective calls attention to areas for improvement and expresses reservations about its broader adoption.</p>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Dive into the Rabbithole</p>
+        </div>
+    </body>
+</html>
