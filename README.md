@@ -1,4 +1,4 @@
-## Flipside: First Prize @ TreeHacks Best GenAI Hack
+## Flipside: Best GenAI Hack (First Prize) @ TreeHacks 2024
 
 ## Inspiration
 
